@@ -1,0 +1,84 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+.col-12 {
+  grid-column: span 12;
+}
+.col-11 {
+  grid-column: span 11;
+}
+.col-10 {
+  grid-column: span 10;
+}
+.col-9 {
+  grid-column: span 9;
+}
+.col-8 {
+  grid-column: span 8;
+}
+.col-7 {
+  grid-column: span 7;
+}
+.col-6 {
+  grid-column: span 6;
+}
+.col-5 {
+  grid-column: span 5;
+}
+.col-4 {
+  grid-column: span 4;
+}
+.col-3 {
+  grid-column: span 3;
+}
+.col-2 {
+  grid-column: span 2;
+}
+.col-1 {
+  grid-column: span 1;
+}
+.row {
+  /* box-sizing: border-box; */
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.project-item {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  cursor: pointer;
+  /* padding: 20px; */
+}
+.pic-cover {
+  overflow: hidden;
+}
+.project-item:hover .project-pic {
+  transform: scale(1.06);
+}
+.project-item:hover .project-item {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.brief-intro {
+  /* position: absolute; */
+  font-size: 14px;
+  padding: 15px;
+  background: #d8d8d8;
+}
+.brief-intro div {
+  color: #999999;
+  margin-top: 3px;
+  font-size: 12px;
+}
+.project-pic {
+  transition: all 1s;
+  vertical-align: bottom;
+  width: 100%;
+  object-fit: cover;
+}

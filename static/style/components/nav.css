@@ -1,0 +1,151 @@
+.placeholder {
+  height: 80px;
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #17191e;
+  text-align: center;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header-inner {
+  padding: 29px 0;
+  margin: 0 -30px;
+  display: flex;
+  font-size: 16px;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+li {
+  cursor: pointer;
+  overflow: hidden;
+}
+.header-flex {
+  display: flex;
+}
+.flex-item:hover a {
+  top: -34px;
+}
+/* .flex-item:hover a::before {
+  bottom: 10px;
+} */
+a {
+  top: 0;
+  position: relative;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  padding: 8px 28px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s;
+}
+a.current {
+  top: -34px;
+}
+a::before {
+  position: absolute;
+  content: attr(data-hover);
+  bottom: -25px;
+  left: 50%;
+  color: #c32c54;
+  transform: translateX(-50%);
+}
+nav {
+  background: red;
+}
+.small-flex,
+.toast-menu {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .placeholder {
+    height: 60px;
+  }
+  .container {
+    display: none;
+  }
+  .small-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .active {
+    color: #c32c54;
+    font-size: 18px;
+    margin-left: 15px;
+    padding: 18px 0;
+  }
+  @keyframes headerMoreAmitate {
+    0% {
+      transform: translateY(-37px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  .header-more {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .header-more-active {
+    animation: headerMoreAmitate 0.3s 1 ease forwards;
+  }
+
+  .header-more .icon-gengduo {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-size: 18px;
+  }
+  .header-more:hover .icon-gengduo {
+    color: #c32c54;
+  }
+  .toast-menu {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000000;
+  }
+  .toast-menu-block {
+    display: block;
+  }
+  .icon-guanbi {
+    font-size: 22px;
+    position: fixed;
+    top: 16px;
+    right: 15px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .small-nav {
+    width: 100vw;
+    height: 100vh;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .small-link {
+    margin: 30px 0;
+  }
+  .small-link a {
+    cursor: pointer;
+    font-size: 18px;
+    color: hsla(0, 0%, 100%, 0.45);
+  }
+  .small-link:hover a {
+    color: #ffffff;
+    font-size: 19px;
+  }
+  .small-link-active a {
+    color: #ffffff;
+    font-size: 19px;
+  }
+}

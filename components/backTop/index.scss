@@ -1,0 +1,22 @@
+@import "../../style/var.scss";
+
+.#{$css-prefix}back-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background-color: var(--textTitle);
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 50px;
+  padding-top: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .iconfont {
+    font-size: 28px;
+    color: #fff;
+  }
+}

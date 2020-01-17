@@ -1,0 +1,60 @@
+@import url(./index/common.css);
+@import url(./index/small-x.css) only screen and (max-width: 768px);
+@import url(./index/small.css) only screen and (min-width: 768px);
+@import url(./index/medium.css) only screen and (min-width: 960px);
+@import url(./index/big.css) only screen and (min-width: 1200px);
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.common-title {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  margin: 0 30px;
+  height: 1px;
+  width: 160px;
+  background: #e3e3e3;
+  display: block;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsla(0, 0%, 100%, 0.45);
+}
+.content span:first-child {
+  font-size: 17px;
+}
+.content span:last-child {
+  font-size: 12px;
+}
+
+/* project-detail */
+
+.project-detail {
+  max-width: 1000px;
+  width: 100%;
+  margin: 60px auto 0;
+  display: flex;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+.project-desc {
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 568px) {
+  .line {
+    display: none;
+  }
+  .common-title {
+    margin-top: 30px;
+  }
+}

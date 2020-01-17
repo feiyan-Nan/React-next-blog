@@ -1,0 +1,17 @@
+.swiper-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* .swiper-container {
+  margin-top: 60px;
+} */
+.swiper-slide img {
+  width: 100%;
+  object-fit: contain;
+}
+@media only screen and (max-width: 768px) {
+  .swiper-wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
